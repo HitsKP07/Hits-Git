@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            height: 20px;
+            width: 100px;
+            background: linear-gradient(red, blue);
+            margin: auto;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            }
+            .whiteline{
+                height: 100%;
+                width: 0;
+                margin: -18px;
+                background: chocolate;
+                position: absolute;
+                transition: 1s;
+                
+            }
+
+            .button:hover .whiteline {
+            width: 50px;
+            }
+    </style>
+</head>
+
+<body>
+    
+</body>
+<div class="button"> Hover me 
+    <div class="whiteline"></div>
+</div>
+</html>

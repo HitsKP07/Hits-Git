@@ -6,30 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .background{
-            height: 100px;
-            width: 70px;
-           
-            border:  black solid;
+        .main{
+            height: 150px;
+            width: 100px;
+            background: linear-gradient(red, green, blue);
+            position: relative;
         }
-        .color{
-            height: 100px;
-            width: 70px;
-            background:linear-gradient(red,green,blue,purple,pink);
-             transition: 40degree; 
-        }
-        .background:hover .color
-        {
-            transition:  
+        .frist{
+            height: 140px;
+            width: 90px;
+            background: black;
+            position: absolute;
+            
+
         }
     </style>
 </head>
-<body>
-    <div class="background">
-        <div class="color">
 
-        </div>
+<body>
+    <div class="main">
+          <div class="frist"></div>
     </div>
-    
 </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nevbar {
+            height: 20px;
+            width: 500px;
+            background: lawngreen;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 2px solid;
+            text-align: center;
+            margin: 100px auto;
+
+        }
+
+        /* .nevbar *{border: 1px solid;} */
+        .content,
+        .home,
+        .about {
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid; */
+
+
+
+        }
+
+        .contant {
+            opacity: 0;
+            border: 2px solid;
+        }
+
+        .home:hover .contant {
+            opacity: 1;
+        }
+
+
+
+
+        @media (max-width: 500px) {
+            .nevbar {
+                display: block;
+                width: 100px;
+                height: auto;
+                margin: 0;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nevbar">
+        <div class="home">home
+            <div class="contant">
+                <div class="menscloths">menscloths</div>
+                <div class="wemanscloths">wemanscloths</div>
+                <div class="childs">childs</div>
+                <div class="shoes">shoes</div>
+            </div>
+        </div>
+        <div class="about">about
+            <div class="contant">
+                <div class="menscloths">menscloths</div>
+                <div class="wemanscloths">wemanscloths</div>
+                <div class="childs">childs</div>
+                <div class="shoes">shoes</div>
+            </div>
+        </div>
+        <div class="content">content
+            <div class="contant">
+                <div class="menscloths">menscloths</div>
+                <div class="wemanscloths">wemanscloths</div>
+                <div class="childs">childs</div>
+                <div class="shoes">shoes</div>
+            </div>
+        </div>
+        <div class="email">email
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

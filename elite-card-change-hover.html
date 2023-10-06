@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nevbar {
+            height: 20px;
+            width: 500px;
+            background: lawngreen;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 2px solid;
+            text-align: center;
+            margin: 100px auto;
+
+        }
+
+        /* .nevbar *{border: 1px solid;} */
+        .content,
+        .home,
+        .about {
+            height: 100%;
+            width: 100%;
+
+
+
+
+        }
+
+        .contant1,
+        .contant2,
+        .contant3 {height: 0px;
+            width: 0px;
+            
+            opacity: 0;
+            
+            border: 2px solid;
+            /* display: flex; */
+           
+        }
+
+        .home:hover .contant1 {
+            opacity: 1;
+            height: auto;
+            width: auto;
+
+        }
+
+        .about:hover .contant2 {
+            opacity: 1;
+            height: auto;
+            width: auto;
+
+        }
+
+        .content:hover .contant3 {
+            opacity: 1;
+            height: auto;
+            width: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nevbar">
+        <div class="home">home
+            <div class="contant1">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+
+            </div>
+        </div>
+        <div class="about">about
+            <div class="contant2">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+            </div>
+        </div>
+        <div class="content">content
+            <div class="contant3">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+                <img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="100px" width="100px" alt="">
+            </div>
+        </div>
+        <div class="email">email
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

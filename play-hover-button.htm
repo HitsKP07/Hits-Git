@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            margin: 150px auto;
+            
+            /* position: relative; */
+        }
+
+        .circle {
+            height: inherit;
+            width: inherit;
+            background-color: blueviolet;
+            /* position: absolute; */
+            border-radius: 50%;
+            transform:scale(1);
+            
+            animation: circle 2s infinite ;
+        }
+        @keyframes circle {100%{transform:scale(1.5);opacity: 0;}}
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

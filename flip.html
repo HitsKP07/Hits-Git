@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main{
+        height: 450px;
+        width: 450px;
+        background: lawngreen;
+        border: 2px solid;
+        margin: 100px auto;
+        position:relative;
+       
+        
+     }
+     .div1,.div2{
+        height: auto;
+        width: auto;
+        position: absolute;
+        transform: rotateY(0deg);
+        transition: 2s;
+        backface-visibility: hidden;
+    }
+    .div2{
+        transform: rotateY(180deg) ;
+    ;
+    }
+  .main:hover .div1 {
+        transform: rotateY(180deg);
+   }
+   .main:hover .div2 {
+        transform: rotateY(0deg);
+   }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1"><img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="auto" width="auto" alt=""></div>
+        <div class="div2"><img src="9e1e327ce9678610b1ff4d56d9902027.jpg" height="auto" width="auto" alt=""></div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            background:gray;
+            position: relative;
+            margin: 100px auto;
+            /* animation: gola 2s linear infinite; */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            
+            
+            
+            
+        }
+        .ander{
+            height: 90%;
+            width: 90%;
+            background: white;
+            z-index: 1;
+            position: absolute;
+            border-radius: 50%;
+            top: 10px;
+
+        }
+        .gol{
+            width: 150px;
+            height: 60px;
+            
+            background: blue;
+            border: 2px transparent;
+            border-radius:60%;
+            position: absolute;
+            
+            } 
+
+        @keyframes gola{
+            from{transform: rotate(0);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="gol" ></div>
+        
+        <div class="ander"></div>
+    </div>
+    
+
+</body>
+</html>

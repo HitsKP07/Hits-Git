@@ -7,25 +7,54 @@
     <title>Document</title>
     <style>
         .main{
-            height: 150px;
-            width: 100px;
-            background: linear-gradient(red, green, blue);
+            height: 200px;
+            width: 200px;
+            background: conic-gradient(lightblue,blue);
             position: relative;
-        }
-        .frist{
-            height: 140px;
-            width: 90px;
-            background: black;
-            position: absolute;
+            margin: 100px auto;
+            animation: gola 2s linear infinite;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
             
+        }
+        .ander{
+            height: 180px;
+            width: 180px;
+            background: white;
+            z-index: 1;
+            top: 10px;
+            position: absolute  ;
+            border-radius: 50%;
 
+        }
+        .gol{
+            width: 20px;
+            height: 20px;
+            background: blue;
+            border: 2px transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            transform: translate(0,0);
+
+        }
+
+        @keyframes gola{
+            from{transform: rotate(0);}
+            to{transform: rotate(360deg);}
         }
     </style>
 </head>
-
 <body>
     <div class="main">
-          <div class="frist"></div>
+        <div class="gol" ></div>
+        <div class="ander"></div>
+        
     </div>
+    <!-- <div class="ander"></div> -->
+
 </body>
 </html>

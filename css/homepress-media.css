@@ -6,10 +6,13 @@
     .Home1,.Home2,.Home3,.Home4,.Home5{margin-left:-10px;line-height: 30px;}
 
    .page1{width: 48%;}
-   
-   .searchbox * {width:20%;}
 
-   .searchbox p {padding-top: 10px;}
+   .searchbox {flex-wrap: wrap;}
+   
+   .searchbox * {width:50%;}
+
+   
+   .searchbox p{padding-top: 20px;}
 
 
 

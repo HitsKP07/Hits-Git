@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .calculator{
+            height: 300px;
+            width: 250px;
+            background-color: rgb(184, 184, 243);
+            margin: 100px auto;
+            border: 2px solid;
+            padding: 10px;
+            
+        }
+        .calculator *{margin: 10px;}
+        #inp1,#inp2{width: 70px;padding: 10px;}
+        .string{padding: 8px;}
+        
+        h3{display: inline;}
+        span{font-size: 30px;}
+        h2{text-align: center;padding: 5px;border: 2px solid;}
+        .sp input{padding: 10px;}
+    
+    </style>
+
+    
+</head>
+<body>
+   
+    <div class="calculator"> 
+        <h2>calculator</h2>
+
+    
+    <input type="text" placeholder="Number 1" id="inp1" >
+    <input type="text" placeholder="Number 2" id="inp2" ><br><br>
+    <span class="sp">
+    <input class="string" type="submit" value="+" onclick="calculater1()">
+    <input type="submit" class="string" value="-" onclick="calculater2()">
+    <input type="submit" class="string" value="*" onclick="calculater3()">
+    <input type="submit" class="string" value="/" onclick="calculater4()"><br><br>
+</span>
+    <h3>Answer is =</h3>
+    <span id="sp1"></span>
+
+</div>
+
+
+<script>
+    numfrst=document.getElementById("inp1")
+    numsec=document.getElementById("inp2")
+    sp=document.getElementById("sp1")
+
+   
+
+    function calculater1()
+    {
+
+        if(numfrst.type==numsec.type)
+        {
+            sp.innerHTML =  numfrst.value*1 + numsec.value*1
+            
+        }
+    }
+    function calculater2()
+    {
+
+        if(numfrst.type==numsec.type)
+        {
+            sp.innerHTML = numfrst.value - numsec.value
+            
+        }
+    }
+    function calculater3()
+    {
+
+        if(numfrst.type==numsec.type)
+        {
+            sp.innerHTML = numfrst.value * numsec.value
+            
+        }
+    }
+    function calculater4()
+    {
+
+        if(numfrst.type==numsec.type)
+        {
+            sp.innerHTML = numfrst.value / numsec.value
+            
+        }
+    }
+    
+
+    
+
+</script>
+
+</body>
+</html>
